@@ -96,7 +96,7 @@ nextNAHits<-function(packages){
 doSomeMore<-function(n, sleep){
         for (i in 1:n){
                 packages<<-populateHits(packages, nextNAHits(packages))
-                sl<-15+round(30*abs(rnorm(1)))
+                sl<-10+round(20*abs(rnorm(1)))
                 print(paste("sleep: ",sl))
                 Sys.sleep(sl)
         }
